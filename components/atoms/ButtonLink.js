@@ -1,13 +1,8 @@
 import { StyledButtonLink } from "../styled/ButtonLinkStyles";
-
-export default function ButtonLink({ name }) {
+export default function ButtonLink(props) {
   return (
-    <StyledButtonLink
-      bgColor={({ theme }) => theme.color.black}
-      colorHover={({ theme }) => theme.color.primary}
-      bgColorHover={({ theme }) => theme.color.white}
-    >
-      {name}
+    <StyledButtonLink href={props.href} {...props}>
+      {props.text}
     </StyledButtonLink>
   );
 }

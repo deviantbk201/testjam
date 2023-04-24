@@ -8,6 +8,7 @@ export default function App({ Component, pageProps }) {
     color: {
       primary: "#f73365",
       secondary: "#8057bd",
+      secondaryDark: "#4F317D",
       white: "#fff",
       black: "#000",
     },
